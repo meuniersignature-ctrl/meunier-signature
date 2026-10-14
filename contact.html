@@ -39,33 +39,53 @@
                 <h2 style="font-size: 32px; color: var(--cream); margin: 10px 0;">Contact</h2>
                 <p style="color: var(--muted); line-height: 1.6;">Une idée ? Un projet de rénovation, de carrelage ou de placo/isolation en Charente ?</p>
             </div>
+         <!-- Bannières de statut invisibles par défaut (gérées automatiquement par la bibliothèque Formspree) -->
+<div data-fs-success style="margin-bottom: 20px;"></div>
+<div data-fs-error style="margin-bottom: 20px;"></div>
 
-            <!-- Formulaire de contact opérationnel -->
-            <form action="https://formspree.io" method="POST" style="display: flex; flex-direction: column; gap: 20px; background: var(--panel); padding: 30px; border-radius: 8px; border: 1px solid var(--line);">
-                
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <label style="color: var(--cream); font-size: 14px;">Nom & Prénom</label>
-                    <input type="text" name="name" required style="background: var(--bg); border: 1px solid var(--line); padding: 12px; color: var(--cream); border-radius: 4px;">
-                </div>
+<!-- Le formulaire possède désormais un ID unique indispensable pour le script -->
+<form id="meunier-contact-form" style="display:flex; flex-direction:column; gap:20px; background:var(--panel); padding:20px;">
+    
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Nom & Prénom</label>
+        <input type="text" name="name" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+        <span data-fs-error="name"></span>
+    </div>
 
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <label style="color: var(--cream); font-size: 14px;">Adresse e-mail</label>
-                    <input type="email" name="email" required style="background: var(--bg); border: 1px solid var(--line); padding: 12px; color: var(--cream); border-radius: 4px;">
-                </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Adresse e-mail</label>
+        <input type="email" name="email" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+        <span data-fs-error="email"></span>
+    </div>
 
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <label style="color: var(--cream); font-size: 14px;">Téléphone</label>
-                    <input type="tel" name="phone" style="background: var(--bg); border: 1px solid var(--line); padding: 12px; color: var(--cream); border-radius: 4px;">
-                </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Téléphone</label>
+        <input type="tel" name="phone" data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+        <span data-fs-error="phone"></span>
+    </div>
 
-                <div style="display: flex; flex-direction: column; gap: 8px;">
-                    <label style="color: var(--cream); font-size: 14px;">Votre projet (rénovation, carrelage, etc.)</label>
-                    <textarea name="message" rows="5" required style="background: var(--bg); border: 1px solid var(--line); padding: 12px; color: var(--cream); border-radius: 4px; resize: vertical;"></textarea>
-                </div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Votre projet (rénovation, carrelage, etc.)</label>
+        <textarea name="message" rows="5" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);"></textarea>
+        <span data-fs-error="message"></span>
+    </div>
 
-                <button type="submit" style="background: var(--or); color: var(--bg); border: none; padding: 14px; font-weight: bold; font-size: 16px; cursor: pointer; border-radius: 4px;">
-                    Envoyer ma demande
-                </button>
+    <!-- Le bouton se désactivera tout seul pendant l'envoi pour éviter les doubles clics -->
+    <button type="submit" data-fs-submit-btn style="background:var(--gold); color:var(--bg); border:none; padding:14px; font-weight:bold; font-size:16px; cursor:pointer;">
+        Envoyer ma demande
+    </button>
+
+</form>
+
+<!-- Script officiel Formspree AJAX pour l'envoi sur site statique -->
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#meunier-contact-form', formId: 'xbgdplgg' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+
+</body>
+</html>
 
             </form>
         </div>
