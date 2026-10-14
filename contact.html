@@ -39,55 +39,16 @@
                 <h2 style="font-size: 32px; color: var(--cream); margin: 10px 0;">Contact</h2>
                 <p style="color: var(--muted); line-height: 1.6;">Une idée ? Un projet de rénovation, de carrelage ou de placo/isolation en Charente ?</p>
             </div>
-         <!-- Bannières de statut invisibles par défaut (gérées automatiquement par la bibliothèque Formspree) -->
-<div data-fs-success style="margin-bottom: 20px;"></div>
-<div data-fs-error style="margin-bottom: 20px;"></div>
-
-<!-- Le formulaire possède désormais un ID unique indispensable pour le script -->
-<form id="meunier-contact-form" style="display:flex; flex-direction:column; gap:20px; background:var(--panel); padding:20px;">
+      <!-- Encadré de contact direct -->
+<div style="background: var(--panel); padding: 40px 20px; text-align: center; border-radius: 8px; border: 1px solid var(--line); max-width: 540px; margin: 0 auto;">
+    <p style="color: var(--cream); font-size: 16px; line-height: 1.6; margin-bottom: 25px;">
+        Pour toute demande de devis de rénovation, carrelage ou placo en Charente, contactez-moi directement par e-mail :
+    </p>
     
-    <div style="display:flex; flex-direction:column; gap:8px;">
-        <label style="color:var(--cream); font-size:14px;">Nom & Prénom</label>
-        <input type="text" name="name" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
-        <span data-fs-error="name"></span>
-    </div>
+    <a href="mailto:votre-adresse-email@://gmail.com de devis - Meunier Signature" 
+       style="display: inline-block; background: var(--gold); color: var(--bg); text-decoration: none; padding: 14px 28px; font-weight: bold; font-size: 16px; border-radius: 4px; transition: background 0.2s;">
+        Envoyer un e-mail direct
+    </a>
+</div>
 
-    <div style="display:flex; flex-direction:column; gap:8px;">
-        <label style="color:var(--cream); font-size:14px;">Adresse e-mail</label>
-        <input type="email" name="email" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
-        <span data-fs-error="email"></span>
-    </div>
-
-    <div style="display:flex; flex-direction:column; gap:8px;">
-        <label style="color:var(--cream); font-size:14px;">Téléphone</label>
-        <input type="tel" name="phone" data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
-        <span data-fs-error="phone"></span>
-    </div>
-
-    <div style="display:flex; flex-direction:column; gap:8px;">
-        <label style="color:var(--cream); font-size:14px;">Votre projet (rénovation, carrelage, etc.)</label>
-        <textarea name="message" rows="5" required data-fs-field style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);"></textarea>
-        <span data-fs-error="message"></span>
-    </div>
-
-    <!-- Le bouton se désactivera tout seul pendant l'envoi pour éviter les doubles clics -->
-    <button type="submit" data-fs-submit-btn style="background:var(--gold); color:var(--bg); border:none; padding:14px; font-weight:bold; font-size:16px; cursor:pointer;">
-        Envoyer ma demande
-    </button>
-
-</form>
-
-<!-- Script officiel Formspree AJAX pour l'envoi sur site statique -->
-<script>
-  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-  formspree('initForm', { formElement: '#meunier-contact-form', formId: 'xbgdplgg' });
-</script>
-<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-
-</body>
-</html>
-
-            </form>
-        </div>
-    </section>
 </body></html>
