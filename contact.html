@@ -14,29 +14,33 @@ header{position:sticky;top:0;z-index:5;background:#080807f2;border-bottom:1px so
 </div>
 
 <!-- Formulaire de contact -->
-  <form action="https://formspree.io" method="POST" style="display:flex; flex-direction:column; gap:20px; ...">
-<div style="display:flex; flex-direction:column; gap:8px;">
-<label style="color:var(--cream); font-size:14px;">Nom & Prénom</label>
-<input type="text" name="name" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream); border-radius:4px; font-family:Arial;">
-</div>
+<form action="https://formspree.io" method="POST" style="display:flex; flex-direction:column; gap:20px; background:var(--panel); padding:20px;">
+    
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Nom & Prénom</label>
+        <input type="text" name="name" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+    </div>
 
-<div style="display:flex; flex-direction:column; gap:8px;">
-<label style="color:var(--cream); font-size:14px;">Adresse e-mail</label>
-<input type="email" name="email" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream); border-radius:4px; font-family:Arial;">
-</div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Adresse e-mail</label>
+        <input type="email" name="email" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+    </div>
 
-<div style="display:flex; flex-direction:column; gap:8px;">
-<label style="color:var(--cream); font-size:14px;">Téléphone</label>
-<input type="tel" name="phone" style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream); border-radius:4px; font-family:Arial;">
-</div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Téléphone</label>
+        <input type="tel" name="phone" style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);">
+    </div>
 
-<div style="display:flex; flex-direction:column; gap:8px;">
-<label style="color:var(--cream); font-size:14px;">Votre projet (rénovation, carrelage, etc.)</label>
-<textarea name="message" rows="5" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream); border-radius:4px; font-family:Arial; resize:vertical;"></textarea>
-</div>
+    <div style="display:flex; flex-direction:column; gap:8px;">
+        <label style="color:var(--cream); font-size:14px;">Votre projet (rénovation, carrelage, etc.)</label>
+        <textarea name="message" rows="5" required style="background:var(--bg); border:1px solid var(--line); padding:12px; color:var(--cream);"></textarea>
+    </div>
 
-<button type="submit" style="background:var(--gold); color:var(--bg); border:none; padding:14px; font-weight:bold; font-size:16px; border-radius:4px; cursor:pointer; margin-top:10px; transition:0.3s;">Envoyer ma demande</button>
+    <button type="submit" style="background:var(--gold); color:var(--bg); border:none; padding:14px; font-weight:bold; font-size:16px; cursor:pointer;">
+        Envoyer ma demande
+    </button>
+
 </form>
-</div></section>
+
 
 </body></html>
