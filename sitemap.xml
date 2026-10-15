@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://sitemaps.org">
   <url>
-    <loc>https://meuniersignature-ctrl.github.io/meunier-signature/</loc>
+    <loc>https://meuniersignature-ctrl.github.io/meunier-signature/index.hmtl</loc>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://contact.html</loc>
+    <loc>https://meuniersignature-ctrl.github.io/meunier-signature/contact.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://prestations.html</loc>
+    <loc>https://meuniersignature-ctrl.github.io/meunier-signature/prestations.html</loc>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://entreprise.html</loc>
+    <loc>https://meuniersignature-ctrl.github.io/meunier-signature/entreprise.html</loc>
     <priority>0.80</priority>
   </url>
 </urlset>
